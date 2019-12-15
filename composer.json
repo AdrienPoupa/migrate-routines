@@ -1,0 +1,30 @@
+{
+    "name": "adrienpoupa/migrate-routines",
+    "description": "Generate Laravel Migrations from existing MySQL routines: views, procedures, functions and triggers.",
+    "keywords": ["laravel", "migration", "generator", "migrations", "artisan", "procedure"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrien Poupa",
+            "email": "adrien@poupa.fr"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.5|^6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdrienPoupa\\MigrateRoutines\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdrienPoupa\\MigrateRoutines\\MigrateRoutinesServiceProvider"
+            ]
+        }
+    }
+}
